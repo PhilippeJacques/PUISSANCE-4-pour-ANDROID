@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Jeux">
+
+    <TextView
+        android:id="@+id/aQuiJouer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="TextView"
+        android:textSize="19sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/colonne1Jeton1"
+        android:layout_width="60dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="150dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/aQuiJouer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne1Jeton2"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/colonne1Jeton1"
+        app:layout_constraintEnd_toEndOf="@+id/colonne1Jeton1"
+        app:layout_constraintStart_toStartOf="@+id/colonne1Jeton1"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne1Jeton3"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/colonne1Jeton2"
+        app:layout_constraintEnd_toEndOf="@+id/colonne1Jeton2"
+        app:layout_constraintStart_toStartOf="@+id/colonne1Jeton2"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne1Jeton4"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/colonne1Jeton3"
+        app:layout_constraintEnd_toEndOf="@+id/colonne1Jeton3"
+        app:layout_constraintStart_toStartOf="@+id/colonne1Jeton3"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne1Jeton5"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/colonne1Jeton4"
+        app:layout_constraintEnd_toEndOf="@+id/colonne1Jeton4"
+        app:layout_constraintStart_toStartOf="@+id/colonne1Jeton4"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne2Jeton1"
+        android:layout_width="60dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toBottomOf="@+id/colonne1Jeton1"
+        app:layout_constraintStart_toEndOf="@+id/colonne1Jeton1"
+        app:layout_constraintTop_toTopOf="@+id/colonne1Jeton1"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne2Jeton2"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/colonne2Jeton1"
+        app:layout_constraintEnd_toEndOf="@+id/colonne2Jeton1"
+        app:layout_constraintStart_toEndOf="@+id/colonne1Jeton2"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne2Jeton3"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/colonne2Jeton2"
+        app:layout_constraintEnd_toEndOf="@+id/colonne2Jeton2"
+        app:layout_constraintStart_toEndOf="@+id/colonne1Jeton3"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne2Jeton4"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/colonne2Jeton3"
+        app:layout_constraintEnd_toEndOf="@+id/colonne2Jeton3"
+        app:layout_constraintStart_toEndOf="@+id/colonne1Jeton4"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne2Jeton5"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/colonne2Jeton4"
+        app:layout_constraintEnd_toEndOf="@+id/colonne2Jeton4"
+        app:layout_constraintStart_toEndOf="@+id/colonne1Jeton5"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne3Jeton4"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/colonne3Jeton3"
+        app:layout_constraintEnd_toEndOf="@+id/colonne3Jeton3"
+        app:layout_constraintStart_toEndOf="@+id/colonne2Jeton4"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne3Jeton3"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/colonne3Jeton2"
+        app:layout_constraintEnd_toEndOf="@+id/colonne3Jeton2"
+        app:layout_constraintStart_toEndOf="@+id/colonne2Jeton3"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne3Jeton2"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/colonne3Jeton1"
+        app:layout_constraintEnd_toEndOf="@+id/colonne3Jeton1"
+        app:layout_constraintStart_toEndOf="@+id/colonne2Jeton2"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne3Jeton5"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/colonne3Jeton4"
+        app:layout_constraintEnd_toEndOf="@+id/colonne3Jeton4"
+        app:layout_constraintStart_toEndOf="@+id/colonne2Jeton5"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne3Jeton1"
+        android:layout_width="60dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toBottomOf="@+id/colonne1Jeton1"
+        app:layout_constraintStart_toEndOf="@+id/colonne2Jeton1"
+        app:layout_constraintTop_toTopOf="@+id/colonne1Jeton1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne4Jeton1"
+        android:layout_width="60dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toBottomOf="@+id/colonne1Jeton1"
+        app:layout_constraintStart_toEndOf="@+id/colonne3Jeton1"
+        app:layout_constraintTop_toTopOf="@+id/colonne1Jeton1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne4Jeton2"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/colonne4Jeton1"
+        app:layout_constraintEnd_toEndOf="@+id/colonne4Jeton1"
+        app:layout_constraintStart_toEndOf="@+id/colonne3Jeton2"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne4Jeton3"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/colonne4Jeton2"
+        app:layout_constraintEnd_toEndOf="@+id/colonne4Jeton2"
+        app:layout_constraintStart_toEndOf="@+id/colonne3Jeton3"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne4Jeton4"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/colonne4Jeton3"
+        app:layout_constraintEnd_toEndOf="@+id/colonne4Jeton3"
+        app:layout_constraintStart_toEndOf="@+id/colonne3Jeton4"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne4Jeton5"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/colonne4Jeton4"
+        app:layout_constraintEnd_toEndOf="@+id/colonne4Jeton4"
+        app:layout_constraintStart_toEndOf="@+id/colonne3Jeton5"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne5Jeton1"
+        android:layout_width="60dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toBottomOf="@+id/colonne1Jeton1"
+        app:layout_constraintStart_toEndOf="@+id/colonne4Jeton1"
+        app:layout_constraintTop_toTopOf="@+id/colonne1Jeton1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne5Jeton2"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/colonne5Jeton1"
+        app:layout_constraintEnd_toEndOf="@+id/colonne5Jeton1"
+        app:layout_constraintStart_toEndOf="@+id/colonne4Jeton2"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne5Jeton3"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/colonne5Jeton2"
+        app:layout_constraintEnd_toEndOf="@+id/colonne5Jeton2"
+        app:layout_constraintStart_toEndOf="@+id/colonne4Jeton3"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne5Jeton4"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/colonne5Jeton3"
+        app:layout_constraintEnd_toEndOf="@+id/colonne5Jeton3"
+        app:layout_constraintStart_toEndOf="@+id/colonne4Jeton4"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/colonne5Jeton5"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:tag="jeton_noire"
+        app:layout_constraintBottom_toTopOf="@+id/colonne5Jeton4"
+        app:layout_constraintEnd_toEndOf="@+id/colonne5Jeton4"
+        app:layout_constraintStart_toEndOf="@+id/colonne4Jeton5"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <Button
+        android:id="@+id/buttonCol1"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="15dp"
+        android:onClick="boutonCol1"
+        android:text="1"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/colonne1Jeton1"
+        app:layout_constraintStart_toStartOf="@+id/colonne1Jeton1"
+        app:layout_constraintTop_toBottomOf="@+id/colonne1Jeton1" />
+
+    <Button
+        android:id="@+id/buttonCol2"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:onClick="boutonCol2"
+        android:text="2"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/colonne2Jeton1"
+        app:layout_constraintStart_toEndOf="@+id/colonne1Jeton1"
+        app:layout_constraintTop_toTopOf="@+id/buttonCol1" />
+
+    <Button
+        android:id="@+id/buttonCol3"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:onClick="boutonCol3"
+        android:text="3"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/colonne3Jeton1"
+        app:layout_constraintStart_toEndOf="@+id/colonne2Jeton1"
+        app:layout_constraintTop_toTopOf="@+id/buttonCol2" />
+
+    <Button
+        android:id="@+id/buttonCol4"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:onClick="boutonCol4"
+        android:text="4"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/colonne4Jeton1"
+        app:layout_constraintStart_toEndOf="@+id/colonne3Jeton1"
+        app:layout_constraintTop_toTopOf="@+id/buttonCol3" />
+
+    <Button
+        android:id="@+id/buttonCol5"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:onClick="boutonCol5"
+        android:text="5"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonCol4"
+        app:layout_constraintEnd_toEndOf="@+id/colonne5Jeton1"
+        app:layout_constraintStart_toEndOf="@+id/colonne4Jeton1" />
+
+    <Button
+        android:id="@+id/buttonFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="75dp"
+        android:enabled="false"
+        android:onClick="boutonFin"
+        android:text="Retour au menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
